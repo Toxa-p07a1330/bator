@@ -9,13 +9,15 @@ let Admin = ()=>{
         position:"absolute"
     }
     const password = "pass";
+    const login = "admin";
     let putResponse = ()=>{
-        let pass = prompt("Введите пароль");
-        if (pass !== password){
-            alert("Неверный пароль")
-            return null
-        }
+        let pass = document.getElementById("pass").value;
+        let log = document.getElementById("login").value;
 
+        if (!(log === login && password === pass)) {
+            alert("Wrong pass")
+            return null;
+        }
         let request = "http://localhost:3001/" + document.getElementById("input").value;
         fetch(request).then(
             response=>{
@@ -37,6 +39,12 @@ let Admin = ()=>{
         )
     }
     return <div style={style}>
+        <div>Логин админимстратора</div>
+        <input type={"text"} id={"login"}/>
+        <br/>
+        <div>Пароль админимстратора</div>
+        <input type={"text"} id={"pass"}/>
+        <br/>
         Поле ввода команд для администратора<br/>
         <input type={"text"} id={"input"}/><br/>
         <button onClick={()=>{putResponse()}}>Выполнить</button><br/>
