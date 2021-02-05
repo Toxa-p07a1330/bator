@@ -22,7 +22,8 @@ class Menu extends React.Component{
                             color:"black",
                             backgroundColor: "#bdb76b",
                             width: "100%    ",
-                            display: "block"
+                            display: "block",
+                            marginLeft:"550%"
                         }
                         return (
                             <div style={{textAlign: "center", lineHeight: "2", paddingLeft:"3%"}}>

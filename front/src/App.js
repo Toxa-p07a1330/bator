@@ -30,8 +30,8 @@ class App extends React.Component{
                                     return (
                                         <div>
                                             <Header/>
-                                            <Menu/>
                                             <Content/>
+                                            <Menu/>
                                     </div>)
                                 }}
                             </MyContext.Consumer>
