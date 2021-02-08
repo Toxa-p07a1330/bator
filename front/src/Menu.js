@@ -10,6 +10,8 @@ class Menu extends React.Component{
             float:"left",
             textDecoration: "none",
             margin: "25px",
+            position:"fixed",
+            marginTop:"0"
 
         }
         return (

@@ -3,8 +3,9 @@ import {MyContext} from "./Context";
 let Timetables = ()=>{
 
     const [data, setData] = useState({isLoaded: false});
-    let wayToApi = "http://localhost:3001/select * from timetable join tutor join groups join class"+
+    let wayToApi = "http://localhost:3001/select * from timetable join tutor join groups join class "+
         "where timetable.groupdId = groups.id and timetable.tutorId = tutor.id and timetable.classId = class.id";
+    console.log(wayToApi)
     if (!data.isLoaded){
         fetch(wayToApi).then(
             (reposnse)=>{

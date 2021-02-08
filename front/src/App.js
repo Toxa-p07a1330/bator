@@ -30,7 +30,7 @@ class App extends React.Component{
                                     return (
                                         <div>
                                             <Header/>
-                                            <Content/>
+                                            <div style={{width:"95%", display:"inline-block", margin:"2%"}}><Content/></div>
                                             <Menu/>
                                     </div>)
                                 }}

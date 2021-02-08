@@ -13,6 +13,7 @@ class Content extends React.Component{
 
     render() {
         let style = {
+
         }
         return(<div style={style}>
             <BrowserRouter>
